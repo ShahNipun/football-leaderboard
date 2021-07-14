@@ -2,7 +2,8 @@ body{
 font-family: 'Poppins', sans-serif;
     }
 
-
+/* banner-section start
+................... */
 .container{
     display: flex;
     justify-content: space-evenly;
@@ -16,15 +17,10 @@ font-family: 'Poppins', sans-serif;
      background-color: rgb(202, 233, 245);
      border-radius: 10px;
      
-     background-repeat: no-repeat;
+     /* background-repeat: no-repeat; */
      
      height: 300px;
-     
-     /* background-origin: content-box; */
-     /* width: 1440px; */
-     /* grid-template-columns: repeat(2,1fr); */
-     /* align-content: center; */
-     /* background-position: center; */   
+      
         }
 
 .top-word{
@@ -54,7 +50,7 @@ font-family: 'Poppins', sans-serif;
 
 .top-image{
     overflow: hidden;
-}
+        }
 .top-image img {
     padding-left: 60px;
     padding-right: 100px;
@@ -63,60 +59,82 @@ font-family: 'Poppins', sans-serif;
     width: 180px;
     
     
-}
+        }
 
 .banner:hover .top-image{
-    transform: scale(1.2);
+     
+    transform: scale(1.2); rotate: (180deg 50%);
     transition: transform 2s ease-in-out;
-}
+        }
+
+/* banner-section start
+................... */
+
+
 
 /*........................
- middle-section start 
+ player/middle-section start 
 ........................ */
 
 .middle-container{
     display: flex;
     justify-content: space-evenly;
     
-}
-
+                }
 
 .box {
-    
+
+    /* background-color: rgb(250, 251, 252); */
     margin-top: 25px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin-bottom: 20px;
+    /* border-radius: 10px; */
     
-}
+    }
 
 .players{
     background-color: rgb(202, 233, 245);
-    border-radius: 10px;
-    box-shadow: tomato;
+    /* border-radius: 10px; */
+   
     display: grid;
     align-items: center;
-    margin-top: 20px;
+
+    
     margin-bottom: 10px;
     margin-left: 5px;
+    margin-right: 5px;
 
-    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
     border-color: wheat;
-    height: 500px;
-    width: 235px;
+    height: 400px;
+    width: 200px;
     
 
-}
+    }
 
 h2{
-    margin: 0;
-}
+    margin-bottom: 0;
+    margin-top: 0;
+    }
+
+    h5{
+        padding-bottom: 100px;
+    }
+
 
 .players img{
-    border-radius: 10px;
-    width: 230px;
-    height: 200px;
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    /* border-radius: 15px; */
+    width: 180px;
+    height: 130px;
 
-}
+    }
 
 
+/*........................
+ Player/middle-section Ends
+........................ */
