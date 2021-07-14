@@ -1,3 +1,4 @@
+/* google font  */
 body{
 font-family: 'Poppins', sans-serif;
     }
@@ -9,18 +10,17 @@ font-family: 'Poppins', sans-serif;
     justify-content: space-evenly;
 }
 
+
  .banner{
    
      display: flex;
      justify-content: space-evenly;
-
      background-color: rgb(202, 233, 245);
-     border-radius: 10px;
-     
-     /* background-repeat: no-repeat; */
-     
+     border-radius: 10px; 
      height: 300px;
-      
+
+     /* background-image: url("images/cover.jpg"); */
+     /* background-repeat: no-repeat; */
         }
 
 .top-word{
@@ -40,7 +40,6 @@ font-family: 'Poppins', sans-serif;
 
 .button  {
     display: flex;
-    
     justify-content: center;
     width: 140px;
     height: 25px;
@@ -56,9 +55,7 @@ font-family: 'Poppins', sans-serif;
     padding-right: 100px;
     padding-top: 50px;
     height: 200px;
-    width: 180px;
-    
-    
+    width: 180px;  
         }
 
 .banner:hover .top-image{
@@ -108,33 +105,87 @@ font-family: 'Poppins', sans-serif;
     padding-left: 10px;
     padding-right: 10px;
     border-color: wheat;
-    height: 400px;
+    height: 450px;
     width: 200px;
     
 
     }
 
-h2{
+/* h2{
     margin-bottom: 0;
     margin-top: 0;
     }
 
-    h5{
+h5{
         padding-bottom: 100px;
     }
-
+ */
 
 .players img{
     padding-top: 10px;
     padding-left: 5px;
     padding-bottom: 5px;
     /* border-radius: 15px; */
-    width: 180px;
+    width: 190px;
     height: 130px;
 
     }
-
-
 /*........................
  Player/middle-section Ends
 ........................ */
+
+
+/* bottom-part start
+.................... */
+
+.bottom-logo{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.bottom-logo img{
+    width: 300px;
+    height: 80px;
+}
+
+.media-icons{
+    size: 2em;
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+    color: rgb(5, 30, 63);
+    padding-top: 10px;
+}
+
+
+.copyright{
+    display: flex;
+    justify-content: center;
+}
+
+/* MEDIA QUERIES FOR MOBILE
+........................... */
+
+@media only screen and (max-width: 600px){
+
+
+    .banner{
+        grid-template-columns: repeat(1, 1fr);
+        height: 600px;
+    }
+
+    .middle-container{
+        width:100%; }
+
+    .box{
+        color: rgb(255, 71, 80);
+        grid-template-columns: repeat(1, 1fr);
+        }
+
+    .banner, .box{
+       flex-direction: column;
+          }
+}
+
+
+    
