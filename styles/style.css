@@ -10,7 +10,6 @@ font-family: 'Poppins', sans-serif;
     justify-content: space-evenly;
 }
 
-
  .banner{
    
      display: flex;
@@ -64,13 +63,13 @@ font-family: 'Poppins', sans-serif;
     transition: transform 2s ease-in-out;
         }
 
-/* banner-section start
+/* banner-section ends
 ................... */
 
 
 
 /*........................
- player/middle-section start 
+ players leader board/middle-section start 
 ........................ */
 
 .middle-container{
@@ -135,8 +134,51 @@ h5{
 ........................ */
 
 
+
 /* bottom-part start
 .................... */
+
+.schedule-container{
+    display: flex;
+    justify-content: space-evenly;
+    
+                }
+
+.box-schedule{
+    /* display: flex;
+    justify-content: space-evenly; */
+    /* background-color: rgb(250, 251, 252); */
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 20px;
+    border-radius: 15px;
+    
+    }
+
+.teams{
+    background-color: rgb(223, 245, 202);
+    /* border-radius: 10px; */
+   
+    display: grid;
+    align-items: center;
+
+    
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+
+    padding-left: 10px;
+    padding-right: 10px;
+    border-color: wheat;
+    height: 120px;
+    width: 220px;
+    border-radius: 15px;
+    
+
+    }
+
+
 
 .bottom-logo{
     display: flex;
@@ -163,10 +205,12 @@ h5{
     justify-content: center;
 }
 
+
+
 /* MEDIA QUERIES FOR MOBILE
 ........................... */
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 688px){
 
 
     .banner{
@@ -180,6 +224,39 @@ h5{
     .box{
         color: rgb(255, 71, 80);
         grid-template-columns: repeat(1, 1fr);
+        }
+    .box-schedule{
+        
+        grid-template-columns: repeat(1, 1fr);
+        }
+    
+
+    .banner, .box{
+       flex-direction: column;
+          }
+}
+ 
+
+/* MEDIA QUERIES FOR TABLETS 
+.............................. */
+@media only screen and (min-width: 600px) and (max-width:992px){
+
+
+    .banner{
+        grid-template-columns: repeat(1, 1fr);
+        height: 600px;
+    }
+
+    .middle-container{
+        width:100%; }
+
+    .box{
+        color: rgb(255, 71, 80);
+        grid-template-columns: repeat(2, 1fr);
+        }
+    .box-schedule{
+        color: rgb(255, 71, 80);
+        grid-template-columns: repeat(2, 1fr);
         }
 
     .banner, .box{
