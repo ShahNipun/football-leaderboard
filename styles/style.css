@@ -231,7 +231,7 @@ h5{
         }
     
 
-    .banner, .box{
+    .box-schedule, .banner, .box{
        flex-direction: column;
           }
 }
@@ -255,11 +255,11 @@ h5{
         grid-template-columns: repeat(2, 1fr);
         }
     .box-schedule{
-        color: rgb(255, 71, 80);
+        
         grid-template-columns: repeat(2, 1fr);
         }
 
-    .banner, .box{
+        .box-schedule, .banner, .box{
        flex-direction: column;
           }
 }
